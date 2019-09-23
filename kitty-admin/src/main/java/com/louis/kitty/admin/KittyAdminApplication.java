@@ -2,14 +2,13 @@ package com.louis.kitty.admin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 /**
  * 启动器
  * @author Louis
  * @date Oct 29, 2018
  */
-@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication(scanBasePackages={"com.louis.kitty"})
 public class KittyAdminApplication {
 
